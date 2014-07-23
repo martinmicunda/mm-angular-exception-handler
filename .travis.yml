@@ -1,0 +1,30 @@
+language: node_js
+node_js:
+  - "0.10"
+
+notifications:
+  email:
+    recipients:
+      - martinmicunda@hotmail.com
+    on_success: never
+    on_failure: always
+
+env:
+  global:
+    # travis-encrypt -r martinmicunda/mm-angular-logger COVERALLS_REPO_TOKEN=<value> --add env.global
+    - secure: fNef07HW5rGEjC4njg5cOz7hAX5+S5DhOYLiHrcJqCVXxxn6tSyKxKnCquJqJMjtzOEJdKl258jOLruXbAT4yNsbJ9r2FkiZ54O9M02rx8GvjkYGO9CxFRBeFRQsVb9dop5lGnPmQ6MwsVW11sKw2d7iSg+NhJmM090c7nVl60U=
+
+# starts xvfb on display port :99.0 (virtual display for Firefox)
+before_install:
+  - "export DISPLAY=:99.0"
+  - "sh -e /etc/init.d/xvfb start"
+  - sleep 3 # give xvfb some time to start
+
+# install dependencies necessary to run this build
+install:
+  - npm install 
+  - bower install
+
+script:
+  - gulp test
+

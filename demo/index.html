@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MM Angular Exception Error Handler Demo</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+</head>
+<body ng-app="customExceptionHandlerDemo">
+        <div ng-controller="ExceptionHandlerController">
+            <p>Reload this page with open console and hit the cause error button...</p>
+            <button ng-click="causeError()">cause error</button>
+        </div>
+
+    <!-- bower:js -->
+    <script src="../bower_components/angular/angular.js"></script>
+    <script src="../bower_components/mm-angular-logger/dist/mm-angular-logger.js"></script>
+    <!-- endbower -->
+    <script type="text/javascript" src="../src/mm-angular-exception-handler.js"></script>
+
+    <script>
+        angular.module('customExceptionHandlerDemo', ['mm.exceptionHandler'])
+            .config(['$exceptionHandlerProvider', function (cfg) {
+                cfg.setConfigAppErrorPrefix('demoApp');
+                cfg.setConfigCustomDns('http://localhost:9000/error');
+            }])
+            .controller('ExceptionHandlerController', ['$scope', 'Logger', function($scope, Logger) {
+                $scope.logger = Logger.getLogger('LoggerController');
+                // cause an error to be thrown as 'y' is undefined.
+                $scope.causeError = function() {
+                    // NOTE: 'y' is undefined.
+                    var x = y;
+                };
+            }]);
+    </script>
+
+    <script src="http://localhost:35729/livereload.js?snipver=1"></script>
+</body>
+</html>
