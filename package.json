@@ -1,7 +1,7 @@
 {
   "name": "mm-angular-exception-handler",
   "description": "An angular module that override default $exceptionHandler service.",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": true,
   "author": {
     "name": "Martin Micunda",

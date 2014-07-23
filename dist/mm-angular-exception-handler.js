@@ -1,6 +1,6 @@
 /**
  * An angular module that override default $exceptionHandler service.
- * @version v0.0.0 - 2014-07-23
+ * @version v0.0.1 - 2014-07-23
  * @link https://github.com/martinmicunda/mm-angular-exception-handler
  * @author Martin Micunda
  * @copyright 2014(c) Martin Micunda
