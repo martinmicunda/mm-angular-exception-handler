@@ -31,7 +31,7 @@ It's up to you to provide your own back end implementation that accept `post` js
 
 ```js
 app.config(['$exceptionHandlerProvider', function (cfg) {
-    cfg.setConfigAppErrorPrefix('demoApp');
+    cfg.setConfigAppErrorPrefix('demoApp'); // optional
     cfg.setConfigCustomDns('http://localhost:3000/error');
 }]);
 ```
@@ -45,9 +45,9 @@ You need to create Sentry account to be able to send error data to [`Sentry`](ht
 ```js
 app.config(['$exceptionHandlerProvider', function (cfg) {
     var ravenConfig = {logger: 'javascript'};
-    cfg.setConfigAppErrorPrefix('demoApp');
+    cfg.setConfigAppErrorPrefix('demoApp'); // optional
     cfg.setConfigRavenDns('https://7be.......491@app.getsentry.com/2...2');
-    cfg.setConfigRavenConfig(ravenConfig);
+    cfg.setConfigRavenConfig(ravenConfig); // optional
 }]);
 ```
 
