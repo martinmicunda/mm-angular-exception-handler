@@ -46,7 +46,7 @@ You need to create Sentry account to be able to send error data to [`Sentry`](ht
 app.config(['$exceptionHandlerProvider', function (cfg) {
     var ravenConfig = {logger: 'javascript'};
     cfg.setConfigAppErrorPrefix('demoApp');
-    cfg.setConfigRavenDns(''https://7be.......491@app.getsentry.com/2...2');
+    cfg.setConfigRavenDns('https://7be.......491@app.getsentry.com/2...2');
     cfg.setConfigRavenConfig(ravenConfig);
 }]);
 ```
@@ -54,7 +54,7 @@ app.config(['$exceptionHandlerProvider', function (cfg) {
 ## Developers
 Clone the repo, `git clone git://github.com/martinmicunda/mm-angular-exception-handler.git`. 
 
-`mm-angular-exception-handler` is tested with `karma` against the latest stable release of AngularJS.
+The `mm-angular-exception-handler` is tested with `karma` against the latest stable release of AngularJS.
 
 ```bash
 $ npm install
@@ -80,9 +80,6 @@ $ gulp serve
   4. Go through the changelog, and fix any mistakes or clarify any unclear commit messages
   5. Commit and push [`dist`](dist/), [`package.json`](package.json), [`bower.json`](bower.json) and [`CHANGELOG.md`](CHANGELOG.md) with `gulp release` 
 
-## Commit Conventions
-Use these [commit conventions](https://docs.google.com/document/d/1QrDFcIiPjSLDn3EL15IJygNPiHORgU1_OOAqWjiDU5Y/edit) to generate a changelog from git metadata. Some example output can be found [here](https://github.com/driftyco/ionic/blob/master/CHANGELOG.md).
-
 ## Versioning
 
 Releases will be numbered with the following format:
@@ -98,7 +95,7 @@ And constructed with the following guidelines:
 For more information on SemVer, please visit <http://semver.org/>.
 
 ## Contributing
-Please submit all pull requests the against master branch. If your unit test contains JavaScript patches or features, you should include relevant unit tests. Thanks!
+Please submit all pull requests the against master branch. If your code contains JavaScript patches or features, you should include relevant unit tests. See [CONTRIBUTING](CONTRIBUTING.md) file more details. Thanks!
 
 ## License
 
