@@ -1,4 +1,4 @@
-[![Build Status](https://secure.travis-ci.org/martinmicunda/mm-angular-exception-handler.png)](http://travis-ci.org/martinmicunda/mm-angular-exception-handler) [![devDependency Status](https://david-dm.org/martinmicunda/mm-angular-exception-handler/dev-status.png)](https://david-dm.org/martinmicunda/mm-angular-exception-handler#info=devDependencies) [![Coverage Status](https://coveralls.io/repos/martinmicunda/mm-angular-exception-handler/badge.png?branch=master)](https://coveralls.io/r/martinmicunda/mm-angular-exception-handler?branch=master)
+[![Bower version](https://badge.fury.io/bo/mm-angular-exception-handler.svg)](http://badge.fury.io/bo/mm-angular-exception-handler) [![Build Status](https://secure.travis-ci.org/martinmicunda/mm-angular-exception-handler.png)](http://travis-ci.org/martinmicunda/mm-angular-exception-handler) [![Coverage Status](https://coveralls.io/repos/martinmicunda/mm-angular-exception-handler/badge.png?branch=master)](https://coveralls.io/r/martinmicunda/mm-angular-exception-handler?branch=master)
 
  mm-angular-exception-handler
 ===================
