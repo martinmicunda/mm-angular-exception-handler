@@ -3,7 +3,7 @@
  mm-angular-exception-handler
 ===================
 
-The `mm.exceptionHandler` module override Angular's default  [`$exceptionHandler`](https://docs.angularjs.org/api/ng/service/$exceptionHandler), it preserves the default behaviour (logging to the console by [`mm.Logger`](https://github.com/martinmicunda/mm-logger) but also posts the error to [`Sentry`](https://getsentry.com/) or some custom reporting tool.
+The `mm.exceptionHandler` module override Angular's default  [`$exceptionHandler`](https://docs.angularjs.org/api/ng/service/$exceptionHandler), it preserves the default behaviour (logging to the console by [`mm.logger`](https://github.com/martinmicunda/mm-angular-logger) but also posts the error to [`Sentry`](https://getsentry.com/) or some custom reporting tool.
 
 > **Requirements:** AngularJS 1.2+, mm-angular-logger 0.3+ 
 
